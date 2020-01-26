@@ -10,3 +10,4 @@
 
  Alexandra Savina
  Kristina Fedina
+ Yuriy Myron
