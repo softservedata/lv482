@@ -32,6 +32,7 @@ public class AppTest {
 	@Test
 	public void testApp() {
 		System.out.println("\t\t\t\tclass AppTest: @Test");
+		System.out.println("\t\t\t\tclass AppTest: Hello Lv465.Java");
 		Assert.assertTrue(true);
 	}
 	

@@ -7,8 +7,8 @@
 	<!-- 3 ERROR 5 WARNING 7 INFO -->
 	<test verbose="9" name="Test11">
 		<classes>
-			<class name="com.softserve.edu.AppTestReport" />
-<!-- 			<class name="com.softserve.edu.AppTest" /> -->
+<!-- 			<class name="com.softserve.edu.AppTestReport" /> -->
+			<class name="com.softserve.edu.AppTest" />
 			<!-- <methods> -->
 			<!-- <include name="testApp" /> -->
 			<!-- </methods> -->
