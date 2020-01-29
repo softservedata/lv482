@@ -20,6 +20,6 @@ public class Appl {
 				System.out.println(student3);
 			}
 		}
-		System.out.println("Average = " + Student.getAvgRating());
+		System.out.println("Average= " + Student.getAvgRating());
 	}
 }
