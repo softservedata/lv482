@@ -7,6 +7,7 @@ public class Appl {
 		Student student2 = new Student("Petro", 6);
 		Student student3 = new Student("Stepan", 1);
 		//
+		
 		if (student1.betterStudent(student2)) {
 			if (student1.betterStudent(student3)) {
 				System.out.println(student1);
