@@ -1,4 +1,4 @@
-package home.work1;
+package com.softserve.edu;
 
 import java.io.BufferedReader;
 import java.io.IOException;
