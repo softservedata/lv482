@@ -1,9 +1,12 @@
 //package com.softserve.edu.conditional;
+//
+//import java.util.Scanner;
+//
 //enum Breed {
-//    DOBERMAN{ public String name(String x, int  y){return x + y;}},
-//    CANES{ public String name(String x, int y){return x + y;}},
-//    MASTIFF{ public String name(String x, int y){return x + y;}},
-//    PUG{ public String name(String x, int y){return x + y;}};
+//    DOBERMAN,
+//    CANES,
+//    MASTIFF,
+//    PUG;
 //}
 //
 //
@@ -11,10 +14,17 @@
 //   // private static String myBreed = Breed;
 //
 //    public static void main(String[] args) {
-//        Breed myFavoriteBreed = Breed.CANES;
-//        String name = myFavoriteBreed.name();
-//        Breed breed = Breed.valueOf(name);
-//        System.out.println(myFavoriteBreed.name(sdg,34));
+//        Scanner scanner = new Scanner(System.in);
+//        Breed myFavoriteBreed = Breed.DOBERMAN;
+///*for (Breed current : Breed.values()){
+// System.out.print("current " + current);
+//}*/
+//String name = "CANES";
+//System.out.print("enter number breed ");
+//int i2 = scanner.nextInt();
+//Breed breed = Breed.values()[i2];
+//        System.out.println(breed);
 //
 //    }
+//
 //}
