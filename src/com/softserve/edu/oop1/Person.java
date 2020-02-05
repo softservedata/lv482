@@ -1,33 +1,53 @@
 package com.softserve.edu.oop1;
 
-public class Person {
-    private static String firstName;
-    private static String lastName;
-    private static int birthYear;
-    private static int getAge;
+import java.time.LocalDate;
 
-    static {
-        System.out.println("Person");
-        getAge = 0;
+public class Person {
+    private String firstName;
+    private String lastName;
+    private int birthYear;
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-    public Person(){
-        firstName = "";
-        lastName = "";
-        birthYear = 0;
-        getAge = 2020 - birthYear;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
     }
     public Person(String firstName,String lastName,int birthYear){
-        this.firstName = "firstName";
-        this.lastName = "lastName";
-        this.birthYear = 0;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthYear = birthYear;
+
     }
-    public static int getBirthYear(){ return birthYear;}
-        public static String getFirstName(){return firstName;}
-        public static String getLastName(){return lastName;}
-        public static int getGetAge(){return 2020 - birthYear;}
+    public int getAge (){
+        int age = LocalDate.now().getYear()-birthYear;
+        return age;
+    }
 
-        @Override
-    public String toString(){return firstName;}
-
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthYear=" + birthYear +
+                '}';
+    }
 }

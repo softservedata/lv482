@@ -1,12 +1,14 @@
 package com.softserve.edu.oop1;
 
+import java.util.Scanner;
+
 public class Appl2 {
     public static void main (String[] ARGS){
-        Person person1 = new Person ("ivan","ivan", 1990);
-        Person person2 = new Person("petro","petro", 1992);
-        Person person3 = new Person("dasha","dasha", 1997);
-        Person getAge = new Person();
-        System.out.print(person1);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter first name ," + "last name ," + "birth year ");
+        Person p1 = new Person(scanner.nextLine(),scanner.nextLine(),scanner.nextInt());
+
+        System.out.print("You " + p1.getAge() + " Years " + p1.getFirstName() +" "+ p1.getLastName());
 
     }
 }
