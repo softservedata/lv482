@@ -63,7 +63,7 @@ public class Employees {
 		double salary;
 
 		for (int i = 0; i < emp.length; i++) {
-			System.out.print("\nEnter Employee name = ");
+			System.out.print("Enter Employee name = ");
 			name = sc.nextLine();
 			System.out.print("Enter Employee departmentNumber = ");
 			departmentNumber = Integer.parseInt(sc.nextLine());
@@ -80,7 +80,7 @@ public class Employees {
 				System.out.println(currenEmployee.toString());
 			}
 		}
-		
+
 		Employees tmp;
 		for (int i = 0; i < emp.length - 1; i++) {
 			for (int j = 0; j < emp.length - 1 - i; j++) {
@@ -91,10 +91,8 @@ public class Employees {
 				}
 			}
 		}
-		System.out.println("\nsorted Employees:\n" + emp.toString());
+		System.out.println("\nsorted Employees:\n" + Arrays.toString(emp));
 	}
-	
-	
 
 	public static int count = 0;
 	private String name;
