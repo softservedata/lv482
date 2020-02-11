@@ -14,7 +14,9 @@ public abstract class PersonAbstract {
 			
 			for(PersonAbstract current : person) {
 				current.print();
-				Staff.salary();
+				if (current instanceof Staff) {
+					((Staff) current).salary();
+				}
 			}
 		}
 }

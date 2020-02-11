@@ -15,7 +15,7 @@ public class Teachers extends Staff{
 	}
 	
 	@Override
-	static void salary() {
+	 void salary() {
 		System.out.println("My salary = 4000$.");
 	}
 
