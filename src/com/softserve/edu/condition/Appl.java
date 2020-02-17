@@ -78,8 +78,8 @@ public class Appl {
 //	}
 
 	public enum Localization {
-		EN("англійська", "English"),
-		UA("українська", "Ukrainian");
+		EN("РђРЅРіР»С–Р№СЃСЊРєР°", "English"),
+		UA("РЈРєСЂР°С—РЅСЃСЊРєР°", "Ukrainian");
 
 		private final String ua;
 		private final String en;
@@ -244,9 +244,9 @@ public class Appl {
 		/*-
 		int temperature = 11;
 		if (temperature < 10) {
-			System.out.println("It’s too cold");
+			System.out.println("ItпїЅs too cold");
 		} else {
-			System.out.println("It’s Ok");
+			System.out.println("ItпїЅs Ok");
 		}
 		//
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -297,7 +297,7 @@ public class Appl {
 		String month = "February";
 		Sesons sesons = Sesons.SUMMER;
 		switch (month) {
-		case "Deсember":
+		case "DeпїЅember":
 		case "January":
 		case "February":
 			sesons = Sesons.WINTER;
