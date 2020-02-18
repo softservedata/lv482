@@ -1,3 +1,4 @@
+/*
 package com.softserve.edu.oop22;
 
 public class SalariedEmployee implements Interface{
@@ -21,3 +22,4 @@ public class SalariedEmployee implements Interface{
         return null;
     }
 }
+*/
