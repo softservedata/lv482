@@ -1,8 +1,10 @@
+/*
 package com.softserve.edu.conditional;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+*/
 /**
  * cONDITIONAL sTATEMENTS
  *
@@ -15,7 +17,8 @@ import java.util.List;
  Display the name and the kind of the oldest dog.
  *
  *
- */
+ *//*
+
 
 public class Dog  {
 
@@ -23,19 +26,23 @@ public class Dog  {
 
         List<Dog> list = new ArrayList<Dog>();
 
-        list.add(new Dog("Vasa", Bread.HASKI, 10));
-        list.add( new Dog("Lisa", Bread.SHARPEI, 12));
+        list.add(new Dog("Muhtar", Bread.HASKI, 10));
+        list.add( new Dog("Aiza", Bread.SHARPEI, 12));
         list.add( new Dog("Barsik", Bread.PITBULL, 13));
+        list.add( new Dog("Bobik", Bread.PITBULL, 10));
+        list.add( new Dog("Den", Bread.SHARPEI, 9));
+        list.add( new Dog("Candy", Bread.HASKI, 14));
 
         list.sort(new AgeComparator());
-        //System.out.println(list);
+        System.out.println(" "+list + " ");
 
-        for (int i = 1; i < list.size(); i++) {
-            if(list.get(i).getAge() == list.get(i-1).getAge()) {
-                System.out.println(list.get(i).toString());
-                System.out.println(list.get(i-1).toString());
-            }
-        }
+
+//        for (int i = 1; i < list.size(); i++) {
+//            if(list.get(i).getAge() == list.get(i-1).getAge()) {
+//                System.out.println(list.get(i).toString());
+//                System.out.println(list.get(i-1).toString());
+//            }
+//        }
         int count =0;
         int maxAge = list.get(0).getAge();
         for (int i = 0; i < list.size(); i++) {
@@ -46,10 +53,12 @@ public class Dog  {
         }
         System.out.println();
         System.out.println(list.get(count).toString());
+        System.out.println();
     }
 
+
     public static class AgeComparator implements Comparator<Dog>{
-        @Override
+
         public int compare(Dog arg0, Dog arg1) {
 
             return (arg0.getAge() - arg1.getAge());
@@ -98,4 +107,4 @@ public class Dog  {
 
 
 
-}
+}*/
