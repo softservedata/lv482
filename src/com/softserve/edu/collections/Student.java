@@ -72,7 +72,8 @@ public class Student {
         Student student4 = new Student("misha", 3);
         Student student5 = new Student("olya", 1);
         student.printStudents();
-
+Student[] students=  {new Student("ivan", 2),new Student("ivan", 2),
+        new Student("ivan", 2),new Student("ivan", 2),new Student("ivan", 2)};
 
     }
 
