@@ -16,8 +16,8 @@ public class Applstr2 {
         String pattern4 = " ([A-Za-z])+$";
         String pattern5 = " ([A-Z])*";
         System.out.println("Entered First name, Last name and Patronymic :");
-        String string = scanner.nextLine();
-//        String string = "Sliusar Roman Igorovich";
+//        String string = scanner.nextLine();
+        String string = "Sliusar Roman Igorovich";
         System.out.println("Original string: " + string);
         Pattern p = Pattern.compile(pattern);
         Pattern p2 = Pattern.compile(pattern2);
