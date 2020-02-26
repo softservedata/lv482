@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ApplExeption {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String colors = " ";
-        String type = " ";
+        String colors;
+        String type;
 
         Plant[] flowers = new Plant[]{
                 new Plant(12, Color.RED, Type.STUNTED, "lilies"),
@@ -31,7 +31,7 @@ public class ApplExeption {
                     }
                 } catch (IllegalArgumentException e) {
                     System.out.println("Color entered incorrectly ");
-
+                    throw new ColorException();
                 } finally {
                     System.out.println("Disigned by Roman");
                 }
@@ -48,19 +48,24 @@ public class ApplExeption {
 
                 } catch (IllegalArgumentException e3) {
                     System.out.println("Type entered incorrectly ");
+                    throw new TypeException();
                 } catch (Exception e2) {
                     System.out.println("Mishap");
                 } finally {
                     System.out.println("Disigned by Roman");
                 }
             } else {
-                System.out.println("Iincorrectly type ");
+                System.out.println("Incorrect type ");
             }
 
         } catch (NumberFormatException e) {
             System.out.println("Number Format Exception ");
 
 
+        } catch (ColorException e) {
+            System.out.println("My color exception ");
+        } catch (TypeException e) {
+            System.out.println("My type exception ");
         } catch (Exception e2) {
             System.out.println(" Format Exception ");
 
