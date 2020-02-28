@@ -1,6 +1,7 @@
 package com.softserve.edu.thread;
 
 /*
+ *      HW-3
  *      Create a thread «one», which would start the thread «two»,
  *      which has to output its number («Thread number two») 3 times and create thread «three»,
  *      which would to output message «Thread number three» 5 times.
@@ -8,11 +9,7 @@ package com.softserve.edu.thread;
 
 
 public class ThreadAppl {
-    public static final Object synch = new Object();
-
     public static void main(String[] args) {
-
-
         Thread t2 = new Thread() {
             public void run() {
                 for (int i = 0; i < 3; i++) {
