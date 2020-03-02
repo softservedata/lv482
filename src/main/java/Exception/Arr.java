@@ -13,7 +13,7 @@ import java.util.Random;
 public class Arr {
 
 	public static void main(String[] args) {
-		
+
 		Random rd = new Random();
 		List<Integer> listInt = new ArrayList<>();
 		int listLength = 10;
@@ -21,18 +21,19 @@ public class Arr {
 			listInt.add(rd.nextInt(30));
 			System.out.println(listInt.get(i));
 		}
-		
+
 		Arr arr = new Arr();
+
 		try {
 			System.out.println("\n Sorted list" + arr.listFromTo(listInt, 3, 5));
 		} catch (NullValueException | InvalidValueException | NegativeValueException e) {
 			System.out.println("Something went wrong");
 			e.printStackTrace();
-		}catch (Exception e) {
+		} catch (Exception e) {
 			System.out.println("Something went wrong. Try one more time");
 		}
-		System.out.println("Original list" + listInt);
-		System.out.println("\n Sorted list");
+		System.out.println("\nOriginal list" + listInt);
+
 	}
 
 	public <T> List<T> listFromTo(List<T> list, int start, int end)
