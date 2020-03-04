@@ -1,7 +1,6 @@
 package com.softserve.edu.thread;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -20,6 +19,11 @@ public class ThreadAppl2 {
         String name = "";
         String birth = "";
         String s;
+        try {
+            BufferedWriter bufferedWriter=new BufferedWriter(new FileWriter(fileText));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         try (BufferedReader br = new BufferedReader(new FileReader(fileText));) {
             while ((s = br.readLine()) != null) {
                 list.add(s);
